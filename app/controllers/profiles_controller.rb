@@ -10,7 +10,7 @@ class ProfilesController < ApplicationController
 
   def create
     @profile = Profile.create(profile_params)
-    redirect_to :index
+    redirect_to root_path
   end
 
   def show
